@@ -1,0 +1,28 @@
+{
+  "name": "ts-clean-arch",
+  "version": "0.0.0",
+  "description": "An example of clean arch core with typescript",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node --import=tsx --watch src/index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LuisMeirelles/ts-clean-arch.git"
+  },
+  "keywords": [
+    "clean-arch",
+    "typescript",
+    "clean-architecture"
+  ],
+  "author": "Luis Meirelles",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LuisMeirelles/ts-clean-arch/issues"
+  },
+  "homepage": "https://github.com/LuisMeirelles/ts-clean-arch#readme",
+  "devDependencies": {
+    "tsx": "^4.17.0",
+    "typescript": "^5.5.4"
+  }
+}
