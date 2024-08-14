@@ -4,7 +4,7 @@ export class ListProductsUseCase {
     constructor(private readonly gateway: ProductGateway) {
     }
 
-    async execute() {
+    public async execute() {
         return await this.gateway.getAll();
     }
 }
