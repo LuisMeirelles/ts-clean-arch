@@ -62,4 +62,14 @@ export class ProductInMemoryGateway implements ProductGateway {
     async getAll(): Promise<Product[]> {
         return products;
     }
+
+    async findById(id: Product['id']): Promise<Product> {
+        const product = products.find(product => product.id === id);
+
+        if (!product) {
+            throw new Error(`Product with id ${id} not found`);
+        }
+
+        return product;
+    }
 }

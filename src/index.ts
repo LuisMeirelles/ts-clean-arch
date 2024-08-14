@@ -1,8 +1,8 @@
-import {ListProductsUseCase} from './product/application/use-cases/list-products';
 import {ProductInMemoryGateway} from './product/infra/gateways/product-in-memory.gateway';
+import {ShowProductUseCase} from './product/application/use-cases/show-product';
 
 const productGateway = new ProductInMemoryGateway();
-const useCase = new ListProductsUseCase(productGateway);
+const useCase = new ShowProductUseCase(productGateway);
 
-useCase.execute()
-    .then(products => console.log(products.map(product => product.toPlainObject())))
+useCase.execute('3')
+    .then(product => console.log(product.toPlainObject()));
